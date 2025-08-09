@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton, GoogleOneTap } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton, UserButton, GoogleOneTap } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
               <SignInButton />
             </SignedOut>
             <SignedIn>
-              <UserButton />
+              <UserButton  />
             </SignedIn>
           </header>
   );
