@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton, GoogleOneTap } from "@clerk/nextjs";
 
 export default function Home() {
