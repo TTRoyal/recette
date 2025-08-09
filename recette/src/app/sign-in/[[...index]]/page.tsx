@@ -1,5 +1,7 @@
-import { SignIn } from '@clerk/nextjs';
+import { SignIn, GoogleOneTap } from '@clerk/nextjs';
 
 export default function Page() {
-  return <SignIn />;
+  return <>
+    <GoogleOneTap />
+  <SignIn /></>;
 }
