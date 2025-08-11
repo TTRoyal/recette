@@ -1,8 +1,10 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import { Rocket } from "lucide-react";
+"use client";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { ChefHat } from "lucide-react";
 import { Button } from "../../ui/button";
 import { Input } from "../../ui/input";
 import StartHeader from "./start";
+import Profile from "./profile";
 
 export default function Header() {
   return (
@@ -12,7 +14,11 @@ export default function Header() {
           <StartHeader/>
         </SignedOut>
         <SignedIn>
-        <UserButton />
+          <Button className="mr-4" >
+            <ChefHat  className="h-4 w-4 " />
+            Ajouter une recette
+          </Button>
+          <Profile />
         </SignedIn>
     </header>
   );
