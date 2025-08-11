@@ -2,16 +2,16 @@
 import * as Clerk from '@clerk/elements/common'
 import * as SignIn from '@clerk/elements/sign-in'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBreadSlice, faChevronLeft, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faBreadSlice, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
-import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import { Card } from '@/components/ui/card'
 
 export default function SignInPage() {
   return (
       
     
-    <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+    <Card className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                p-6 rounded-lg shadow-lg z-50 bg-neutral-900">
                 
       <SignIn.Root>
@@ -53,6 +53,6 @@ export default function SignInPage() {
         </SignIn.Step>
         <div id="clerk-captcha" data-cl-theme="dark" data-cl-size="flexible" data-cl-language="fr-FR" />
       </SignIn.Root>
-    </div>
+    </Card>
   )
 }
