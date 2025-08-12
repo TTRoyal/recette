@@ -94,8 +94,7 @@ export default function Home() {
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
               Votre bibliothèque de recettes grandit avec vous
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Chaque fiche créée s'ajoute automatiquement à votre collection personnelle, accessible partout
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Chaque fiche créée s&apos;ajoute automatiquement à votre collection personnelle, accessible partout
             </p>
           </div>
 
@@ -155,7 +154,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">Design professionnel</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Mise en page élégante prête pour l'impression haute qualité
+                Mise en page élégante prête pour l&apos;impression haute qualité
               </p>
             </div>
             <div className="text-center">
@@ -178,10 +177,10 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Vos recettes méritent d'être mémorisées
+            Vos recettes méritent d&apos;être mémorisées
           </h2>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Rejoignez une communauté de boulangers qui font confiance à "Mon livre de recettes" pour créer des fiches recettes
+            Rejoignez une communauté de boulangers qui font confiance à &quot;Mon livre de recettes&quot; pour créer des fiches recettes
             exceptionnelles
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -205,7 +204,7 @@ export default function Home() {
           <p className="text-background/80 mb-6">Le générateur de fiches recettes pour les passionnés de boulangerie</p>
           <div className="flex justify-center space-x-6 text-sm text-background/60">
             <a href="#" className="hover:text-background transition-colors">
-              Conditions d'utilisation
+              Conditions d&apos;utilisation
             </a>
             <a href="#" className="hover:text-background transition-colors">
               Politique de confidentialité
