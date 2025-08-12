@@ -8,8 +8,7 @@ import Profile from "./profile";
 
 export default function Header() {
   return (
-    <header className="flex justify-end items-center p-4 h-16 w-full">
-        <Input className="mr-4 w-51.5" type="text" placeholder="Rechercher"/>
+    <header className="flex justify-end items-center p-4 h-16 w-full fixed z-10">
         <SignedOut>
           <StartHeader/>
         </SignedOut>

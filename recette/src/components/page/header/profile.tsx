@@ -2,7 +2,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { useUser } from "@clerk/nextjs";
+import { SignOutButton, useUser } from "@clerk/nextjs";
 import { ChefHat, LogOut, Settings } from "lucide-react";
 
 export default function Profile() {
@@ -23,7 +23,9 @@ export default function Profile() {
             <h2 className="font-semibold text-center">{user?.fullName}</h2>
             <Button variant="ghost" className="w-full justify-start hover:cursor-pointer my-1"> <ChefHat/> Mes Recettes <Badge variant="secondary">20</Badge> </Button>
             <Button variant="ghost" className="w-full justify-start hover:cursor-pointer my-1"> <Settings/> Paramètres</Button>
-            <Button variant="ghost" className="w-full justify-start hover:cursor-pointer my-1"> <LogOut/> Se Déconnecter</Button>
+            <SignOutButton>
+                <Button variant="ghost" className="w-full justify-start hover:cursor-pointer my-1"> <LogOut/> Se Déconnecter</Button>
+            </SignOutButton>
         </PopoverContent>
     </Popover>
   );

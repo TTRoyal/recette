@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBreadSlice, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
+import { ChefHat } from 'lucide-react';
 
 export default function SignIns() {
   const containerClass =
@@ -19,10 +20,14 @@ export default function SignIns() {
         <SignIn.Step name="start" className={stepClass}>
           <header className="text-center">
             <Link href="/">
-              <FontAwesomeIcon fontSize={50} color="white" icon={faBreadSlice} />
+              {/* <FontAwesomeIcon fontSize={50} color="white" icon={faBreadSlice} /> */}
+              <ChefHat color='white' size={70} className='m-auto'></ChefHat>
             </Link>
-            <h1 className="mt-4 text-xl font-medium tracking-tight text-white">
-              Se connecter à Recette
+            <h1 className="mt-2 text-xl font-medium tracking-tight text-white">
+              Se connecter à
+            </h1>
+            <h1 className=" text-xl font-medium tracking-tight text-white">
+              Mon Livre de Recette
             </h1>
           </header>
 
